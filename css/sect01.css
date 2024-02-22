@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+section#sect01{
+    position: relative;
+    width: 100%;
+    background: url(../img/bg_top_pc.jpg) no-repeat top center/cover;
+    background-size: 100% 100%;
+}
+#sect01 ._pc .wrapper{
+    position: relative;
+    height: 850px;
+    padding-top: 110px;
+    overflow: hidden;
+}
+#sect01 ._pc .wrapper .container{
+    position: absolute;
+    left: calc(50% - 660px);
+    z-index: 3;
+    width: 1320px;
+    
+    /* overflow: hidden; */
+}
+#sect01 ._pc .wrapper .container .tit{
+    padding: 70px 0 125px 0;
+    background: url(../img/frame_pc.png) no-repeat top center/cover;
+}
+#sect01 ._pc .wrapper .container .tit .bookmark{
+    padding-top: 25px;
+}
+#sect01 ._pc .wrapper .container .tit .subtit{
+    padding: 40px 0;
+}
+#sect01 ._pc .wrapper .container .tit .tit_cen{
+    display: flex;
+    justify-content: center;
+}
+#sect01 ._pc .wrapper .container .book{
+    position: absolute;
+    top: 95px;
+    animation: book 1.5s 0s infinite linear alternate;
+}
+#sect01 ._pc .wrapper .container .book.trophy{
+    left: -300px;
+    z-index: -1;
+}
+#sect01 ._pc .wrapper .container .book.book2{
+    right: -150px;
+}
+@keyframes book{
+    0%{transform:translate(0,30px)}
+    100%{transform:translate(0,0)}
+}
+#sect01 ._pc .wrapper .pang{
+    position: absolute;
+    top: 0;
+}
+#sect01 ._pc .work{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 200px 0 110px 0;
+    background: url(../img/bg_btm_pc.png) no-repeat top center/cover;
+    z-index: 7;
+    top: 785px;
+    width: 100%;
+}
+#sect01 ._pc .work .cong{
+    padding-top: 140px;
+}
+#sect01 ._pc .work .sec1_tit{
+    padding: 80px 0;
+}
+#sect01 ._pc .work .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1280px;
+    padding: 90px 0;
+    background-color: #ffffff;
+    border: 3px solid #eaeaea;
+    border-radius: 15px;
+}
+#sect01 ._pc .work .box .best2{
+    padding-top: 75px;
+}
+/* 너비 720~1360 */
+@media screen and (min-width: 721px) and (max-width: 1360.9999px){
+    section#sect01{
+        position: relative;
+        width: 100%;
+        background: url(../img/bg_top_pc.jpg) no-repeat top center/cover;
+        background-size: 100% 100%;
+    }
+    section#sect01 ._pc .wrapper{
+        position: relative;
+        height: 62.500vw;
+        padding-top: 8.088vw;
+        overflow: hidden;
+    }
+    #sect01 ._pc .wrapper .container{
+        position: absolute;
+        left: calc(50% - 34.375vw);
+        z-index: 3;
+        width: 68.750vw;
+        background: url(../img/frame_pc.png) no-repeat top center/cover;
+        background-size: 100%;
+        /* overflow: hidden; */
+    }
+    #sect01 ._pc .wrapper .container .tit{
+        padding: 5.147vw 0 9.191vw 0;
+    }
+    #sect01 ._pc .wrapper .container .tit img{
+        max-width: 100%;
+        height: auto;
+    }
+    #sect01 ._pc .wrapper .container .tit .bookmark{
+        padding-top: 1.838vw;
+    }
+    #sect01 ._pc .wrapper .container .tit .bookmark img{
+        width: 30%;
+    }
+    #sect01 ._pc .wrapper .container .tit .subtit{
+        padding: 2.941vw 0;
+    }
+    #sect01 ._pc .wrapper .container .tit .tit_cen{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    #sect01 ._pc .wrapper .container .book{
+        position: absolute;
+        top: 8.985vw;
+        animation: book 1.5s 0s infinite linear alternate;
+    }
+    #sect01 ._pc .wrapper .container .book img{
+        max-width: 100%;
+        height: auto;
+    }
+    #sect01 ._pc .wrapper .container .book.trophy{
+        width: 60%;
+        left: -15.074vw;
+    }
+    #sect01 ._pc .wrapper .container .book.book2{
+        width: 20%;
+        right: -5.147vw;
+    }
+    #sect01 ._pc .wrapper .pang img{
+        width: 100%;
+    }
+    #sect01 ._pc .work{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12.706vw 0 5.029vw 0;
+        background: url(../img/bg_btm_pc.png) no-repeat top center/cover;
+        z-index: 7;
+        top: 46.382vw;
+        background-size: 100%;
+    }
+    #sect01 ._pc .work .cong{
+        width: 40%;
+        padding-top: 4.779vw;
+    }
+    #sect01 ._pc .work .cong img{
+        width: 100%;
+    }
+    #sect01 ._pc .work .sec1_tit{
+        width: 68.750vw;
+        padding: 80px 0;
+    }
+    #sect01 ._pc .work .sec1_tit img{
+        width: 100%;
+    }
+    #sect01 ._pc .work .box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 68.750vw;
+        padding: 90px 0;
+        background-color: #ffffff;
+        border: 3px solid #eaeaea;
+        border-radius: 15px;
+    }
+    #sect01 ._pc .work .box img{
+        width: 100%;
+    }
+    #sect01 ._pc .work .box .best{
+        width: 55.208vw;
+    }
+    #sect01 ._pc .work .box .best2{
+        width: 55.208vw;
+        padding-top: 5.515vw;
+    }
+}
+/* 너비 720미만 */
+@media screen and (max-width: 720.9999px){
+    section#sect01{
+        position: relative;
+        width: 100%;
+        background: url(../img/mo/bg_top_mo.jpg) no-repeat top center/cover;
+    }
+    section#sect01 ._mo .wrapper{
+        position: relative;
+        height: 125.5vw;
+        padding-top: 13.088vw;
+        /* overflow: hidden; */
+    }
+    #sect01 ._mo .wrapper .container{
+        position: absolute;
+        left: calc(50% - 40.972vw);
+        z-index: 3;
+        width: 81.944vw;
+        /* overflow: hidden; */
+    }
+    #sect01 ._mo .wrapper .container .tit{
+        padding: 5.147vw 0 21.191vw 0;
+        background: url(../img/mo/frame_mo.png) no-repeat top center/cover;
+        background-size: 100%;
+    }
+    #sect01 ._mo .wrapper .container .tit img{
+        max-width: 100%;
+        height: auto;
+    }
+    #sect01 ._mo .wrapper .container .tit .bookmark{
+        padding-top: 8.838vw;
+    }
+    #sect01 ._mo .wrapper .container .tit .subtit{
+        padding: 7.941vw 0;
+    }
+    #sect01 ._mo .wrapper .container .tit .tit_cen{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    #sect01 ._mo .wrapper .container .book{
+        position: absolute;
+        top: -13.015vw;
+        z-index: -1;
+        animation: book 1.5s 0s infinite linear alternate;
+    }
+    #sect01 ._mo .wrapper .container .book img{
+        max-width: 100%;
+        height: auto;
+    }
+    #sect01 ._mo .wrapper .container .book.trophy{
+        left: -9.074vw;
+    }
+    #sect01 ._mo .wrapper .container .book.book2{
+
+        top: 55vw;
+        right: -9.147vw;
+        width: 25%;
+        z-index: 10;
+    }
+    #sect01 ._mo .wrapper .pang{
+        position: absolute;
+        top: 0;
+    }
+    #sect01 ._mo .wrapper .pang img{
+        width: 100%;
+    }
+    #sect01 ._mo .work{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12.706vw 0 8.029vw 0;
+        background: url(../img/bg_btm_pc.png) no-repeat top center/cover;
+        z-index: 7;
+        top: 117vw;
+    }
+    #sect01 ._mo .work .cong{
+        width: 66.889vw;
+        padding-top: 13.779vw;
+    }
+    #sect01 ._mo .work .cong img{
+        width: 100%;
+    }
+    #sect01 ._mo .work .sec1_tit{
+        width: 85.889vw;
+        padding: 10.417vw 0 6.944vw 0;
+    }
+    #sect01 ._mo .work .sec1_tit img{
+        width: 100%;
+    }
+    #sect01 ._mo .work .box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 85.889vw;
+        padding: 9.722vw 0;
+        background-color: #ffffff;
+        border: 3px solid #eaeaea;
+        border-radius: 15px;
+    }
+    #sect01 ._mo .work .box img{
+        width: 100%;
+    }
+    #sect01 ._mo .work .box .best{
+        width: 75vw;
+    }
+    #sect01 ._mo .work .box .best2{
+        width: 75vw;
+        padding-top: 7.515vw;
+    }
+}

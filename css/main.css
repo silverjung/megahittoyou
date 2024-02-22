@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+/* reset */
+*{margin: 0; padding: 0;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{border: 0;}
+
+/* pc,mo */
+._pc{display: block;}
+._mo{display: none;}
+@media screen and (max-width: 720.9999px){
+    ._pc{display: none;}
+    ._mo{display: block;}
+}
+
+/* dday */
+.dday_wrapper{
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+.dday_wrapper h2.dday_scr{
+    z-index: 1;
+    position: absolute;
+    top: 108px; right: 0px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 44px;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    color: #fcc806;
+}
+.dday_wrapper h2.dday{
+    z-index: 1;
+    position: absolute;
+    top: 164px; right: 0px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 44px;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    color: #fcc806;
+}
+/* 너비 720~1360 */
+@media screen and (min-width: 721px) and (max-width: 1360.9999px){
+    .dday_wrapper{
+        position: relative;
+        width: 94.05vw;
+        margin: 0 auto;
+    }
+    .dday_wrapper h2.dday_scr{
+        z-index: 1;
+        position: absolute;
+        top: 7.94vw; right: 0vw;
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 3.23vw;
+        font-weight: normal;
+        letter-spacing: -0.02em;
+        color: #fcc806;
+    }
+    .dday_wrapper h2.dday{
+        z-index: 1;
+        position: absolute;
+        top: 12.05vw; right: 0vw;
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 3.23vw;
+        font-weight: normal;
+        letter-spacing: -0.02em;
+        color: #fcc806;
+    }
+}
+/* 너비 720미만 */
+@media screen and (max-width: 720.9999px){
+    .dday_wrapper{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .dday_wrapper h2.dday_scr{
+        z-index: 1;
+        position: absolute;
+        top: 2.40vw; right: 5.55vw;
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 5.83vw;
+        font-weight: normal;
+        letter-spacing: -0.02em;
+        color: #fcc806;
+    }
+    .dday_wrapper h2.dday{
+        z-index: 1;
+        position: absolute;
+        top: 8.25vw; right: 5.55vw;
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 5.83vw;
+        font-weight: normal;
+        letter-spacing: -0.02em;
+        color: #fcc806;
+    }
+}
+
+/* quick */
+.quick{
+    z-index: 9999;
+    position: fixed;
+    top: 50%; right: 0px;
+    transform: translateY(-50%);
+    width: 153px;
+}
+.quick ul{
+    width: 100%;
+}
+.quick ul li{
+    opacity: 0.6;
+    position: relative;
+    width: 100%; height: 50.4px;
+    background: #000;
+    text-align: center;
+    font-family: 'Pretendard--Medium';
+    font-size: 24px;
+    line-height: 50.4px; letter-spacing: -0.02em;
+    color: #fff;
+    cursor: pointer;
+}
+.quick ul li.active{
+    opacity: 0.7;
+    background: #591fc9;
+}
+.quick ul li:last-child{
+    opacity: 0.7;
+    background: #591fc9;
+}
+.quick ul li:last-child::before{
+    display: block; content: ""; clear: both;
+    position: absolute;
+    top: 50%; left: 45px;
+    transform: translateY(-50%);
+    width: 17px; height: 10px;
+    background: url(../img/quick_top.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+/* 너비 720~1360 */
+@media screen and (min-width: 721px) and (max-width: 1360.9999px){
+    .quick{
+        z-index: 9999;
+        position: fixed;
+        top: 50%; right: 0vw;
+        transform: translateY(-50%);
+        width: 11.24vw;
+    }
+    .quick ul{
+        width: 100%;
+    }
+    .quick ul li{
+        opacity: 0.6;
+        position: relative;
+        width: 100%; height: 3.70vw;
+        background: #000;
+        text-align: center;
+        font-family: 'Pretendard--Medium';
+        font-size: 1.76vw;
+        line-height: 3.70vw; letter-spacing: -0.02em;
+        color: #fff;
+        cursor: pointer;
+    }
+    .quick ul li.active{
+        opacity: 0.7;
+        background: #591fc9;
+    }
+    .quick ul li:last-child{
+        opacity: 0.7;
+        background: #591fc9;
+    }
+    .quick ul li:last-child::before{
+        display: block; content: ""; clear: both;
+        position: absolute;
+        top: 50%; left: 3.31vw;
+        transform: translateY(-50%);
+        width: 1.25vw; height: 0.73vw;
+        background: url(../img/quick_top.png) no-repeat top center;
+        background-size: 100% 100%;
+    }
+}
+/* 너비 720미만 */
+@media screen and (max-width: 720.9999px){
+    .quick{
+        display: none;
+    }
+}
+/* quick end */
